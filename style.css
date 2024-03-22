@@ -1,0 +1,372 @@
+:root {
+    font-size: 18px;
+    font-family: "Libre Baskerville" , "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+    --p1: #303841;
+    --p2: #423c52;
+    --p3: #B9B4C7;
+    --p4: white;
+}
+
+body {
+    color: #ffffff;
+    background-color: var(--p1);
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+hr {
+    width: 50vh;
+}
+
+/*Navbar*/
+.header {
+    background-color: black;
+    color: white;
+    height: 8vh;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+}
+
+.menu-toggle {
+    height: 1rem;
+    display: none;
+}
+
+.menu-btn {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.menu-btn:hover{
+	color:#6c6f6d;
+}
+
+.sidenav {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -175px; 
+    width: 175px;
+    height: 100vh;
+    background-color: var(--p2);
+    padding-top: 2.5rem;
+	transition: left 0.5s ease-in-out;
+}
+
+.sidenav a:last-child {
+    margin-top: auto;
+    padding-bottom: 3rem;
+}
+
+.sidenav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.sidenav a:hover{
+	background-color:#000000
+}
+
+.logo-container-n {
+    flex: 1;
+    text-align: center;
+}
+
+.logo-container-n img {
+    width: 5rem;
+}
+
+.contact-container {
+    margin-left: auto;
+}
+
+.contact-btn {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+
+.menu-toggle:checked + .header .sidenav {
+    left: 0;
+}
+
+.main-content {
+	display: flex;
+    /* height: 200vh; */
+}
+
+.close-btn {
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+}
+
+.close-btn:hover {
+    color: #ccc;
+}
+
+.main-page-img {
+	position:absolute;
+    margin-top: 8vh;
+	width: 100%;
+	height: 90vh;
+    background-image: url("Images/Close\ Up\ Ruby.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+.popWordContainer{
+    position: absolute;
+
+}
+
+.greyscreen{
+    top: 0;
+    left:-300%;
+    margin-top: 8vh;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.60);
+    width: 100%;
+    height: 90vh;
+    transition: left 1s ease-out;
+    z-index: -1;
+}
+
+.popword{
+    width:auto;
+    height:auto;
+    font-size: 50px;
+    position: absolute;
+    padding-top: 40vh;
+    padding-left: 10vh;
+    margin-left:-10vh;
+    color: white;
+    font-family:Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+    opacity:0;
+    font-weight: 500;
+    transition: opacity 2.5s ease, left 1.75s ease-out;
+    letter-spacing: 1.5px;
+}
+
+.popword2{
+    font-weight: 500;
+    margin-left: 9vh;
+    padding-left: 60vh;
+    font-size: 50px;
+    line-height: 1;
+}
+
+.back-image{
+	background-image: url(Close-Up-Ring.jpeg);
+	background-size: top 85px;
+	width:100%;
+}
+
+/*Shopping Cart*/
+.main {
+    margin-top: 8vh;
+    display: flex;
+}
+
+.navbar {
+    height: 8vh;
+    background-color: var(--p2);
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100vw;
+}
+
+
+/*item lists*/
+.item-container {
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+}
+
+.item-list {
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    height: 3rem;
+    width: 60vw;
+    background-color: var(--p4);
+    list-style: none;
+    margin-bottom: 10px;
+    border-radius: 25px;
+}
+
+/*summary lists*/
+.summary-container {
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--p2);
+    margin: 12px;
+    border-radius: 25px;
+}
+
+.summary {
+    list-style: none;
+}
+
+/* promotions */
+.promotions-title {
+    text-align: center;
+}
+
+.promotions-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100vh;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.promotions ,.promotions-a {
+    display: flex;
+    color: black;
+    width: 80vw;
+    height: 60vh;
+    background-color: var(--p4);
+    margin-top: 3rem;
+    border-radius: 2.5rem;
+}
+
+.promotions-a img {
+    margin-left: auto;
+}
+
+.promotions-text {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-left: 1rem;
+    text-align: justify;
+}
+
+.promotions img, .promotions-a img {
+    height: 100%;
+    object-fit: contain;
+    border-radius: 2.5rem;
+}
+
+/* Login */
+.login {
+    margin-top: 8vh;
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.login-container {
+    margin-right: 5rem;
+    background-color: rgba(0, 0, 0, 0.8); 
+    padding: 4rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+}
+
+.input-text, .input-pass {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #666; 
+  border-radius: 4px;
+  outline: none;
+  color: #333;
+  background-color: #ddd;
+}
+.input-submit {
+  background-color: #ff8c00; 
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+.input-submit:hover {
+  background-color: #ff7f00; /* New hover color */
+}
+
+.logo-container {
+    padding-right: 2rem;
+}
+
+.logo-container img {
+    width: 40vw;
+    height: 75vh;
+    border-radius: 10px;
+}
+
+/* Footer */
+.footer-container {
+    background-color: black; 
+    color: white;
+    display: flex; /* Set to flex to adjust layout */
+    justify-content: space-around; /* Evenly distribute space */
+    align-items: center; /* Center items vertically */
+    padding: 20px; /* Added padding for spacing */
+}
+
+.footer-section ul li {
+    margin-bottom: 10px; 
+}
+
+.footer-section ul li a {
+    color: white; 
+    text-decoration: none; 
+}
+
+
+.social-logo, .payment-logo {
+    width: 40px; 
+    height: auto; 
+}
+
+.payment-methods {
+    list-style: none; 
+    padding: 0; 
+}
+
+.social-media {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media li {
+    margin-right: 10px;
+}
