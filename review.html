@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Customer Reviews & Footer</title>
+</head>
+<body>
+<nav class="navbar" >
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <header class="header">
+        <div class="menu-container">
+            <label for="menu-toggle" class="menu-btn">&#9776;</label>
+            <nav class="sidenav">
+                <label for="menu-toggle" class="close-btn">&#10005;</label>
+                <a href="home.html">Home</a>
+                <a href="aboutus.html">About</a>
+                <a href="review.html">Reviews</a>
+                <a href="login.html">Log in</a>
+            </nav>
+        </div>
+        <div class="logo-container-n">
+            <a href="home.html">
+                <img src="Images/oslux.png" alt="Logo">
+            </a>
+        </div>
+        <div class="cart">
+            <a href =""><img src="Images/Cart.png"></a>
+        </div>
+        <div class="contact-container">
+            <a href="" class="contact-btn">Contact Us</a>
+        </div>
+    </header>
+</nav>
+
+<div class="review-container">
+    <h1>Customer reviews</h1>
+    <div class="filter-bar">
+        <select class="filter-dropdown" onchange="filterReviews()">
+            <option value="all">All Reviews</option>
+            <option value="highest">Highest Star Rating Reviews</option>
+            <option value="lowest">Lowest Star Rating Reviews</option>
+        </select>
+
+        <input type="text" class="search-bar" placeholder="Search reviews..." oninput="searchReviews()">
+    </div>
+
+    <div class="review">
+            <img class="profile-picture" src="Images/Review/first.jpg" alt="Profile Picture">
+            <div class="reviewer-info">
+                <h4>Audrey Roloff <span class="star-rating">★★★★★</span></h4>
+		<p class="review-date">March 10, 2024</p>
+                <p>Loved all my products , everything is literally perfect, I definitely will be purchasing again! Thank you!</p>
+            </div>
+        </div>
+
+        <div class="review">
+            <img class="profile-picture" src="Images/Review/second.jpg" alt="Profile Picture">
+            <div class="reviewer-info">
+                <h4>Simon Cowell <span class="star-rating">★★★★★</span></h4>
+		<p class="review-date">February 20, 2024</p>
+                <p>I love this company. Great service and great products, very fast shipping. Will continue doing business with you.</p>
+            </div>
+        </div>
+
+        <div class="review">
+            <img class="profile-picture" src="Images/Review/third.jpg" alt="Profile Picture">
+            <div class="reviewer-info">
+                <h4>Miguel Tello <span class="star-rating">★★★★★</span></h4>
+		<p class="review-date">December 25, 2023</p>
+                <p>Excellent merchandise and very good price. Highly recommended.</p>
+            </div>
+        </div>
+
+	<div class="review">
+            <img class="profile-picture" src="Images/Review/forth.jpg" alt="Profile Picture">
+            <div class="reviewer-info">
+                <h4>Wendy Jensen <span class="star-rating">★★★★</span></h4>
+		<p class="review-date">October 18, 2023</p>
+                <p>Would like a lower price on these.</p>
+            </div>
+        </div>
+
+	<div class="review">
+            <img class="profile-picture" src="Images/Review/fifth.png">
+            <div class="reviewer-info">
+                <h4>Anonymous <span class="star-rating">★★</span></h4>
+		<p class="review-date">July 10, 2023</p>
+                <p>I am pleased with the quality of these but the size is a bit disappointing. Maybe I didnt read the details enough but the length of the bracelets isn’t the same. The silver are much smaller wrist size than the gold. And the bar to engrave on is incredibly tiny. Would be hard for someone with a laser machine to engrave a legible name on these. If the size was a little larger in both width and bar size I would give these a 5 star rating.</p>
+            </div>
+        </div>
+
+
+    <p class="review-count">5 reviews</p>
+</div>
+
+<footer class="footer-container">     
+    <div class="footer-section">
+        <h3>Contact Details</h3>
+        <p>123, Jalan Damansara</p>
+        <p>Kuala Lumpur, 50480 Malaysia</p>
+        <p>Phone: 012-345-6789</p>
+        <p>Email: oslux@jewelrystore.com</p>
+    </div>
+
+    <div class="footer-section">
+        <h3>Follow Us</h3>
+        <ul class="social-media">
+            <li><a href="https://www.youtube.com" target="_blank"><img class="social-logo" src="youtube.png" alt="YouTube" title="YouTube"></a></li>
+            <li><a href="https://www.instagram.com" target="_blank"><img class="social-logo" src="instagram.png" alt="Instagram" title="Instagram"></a></li>
+            <li><a href="https://twitter.com" target="_blank"><img class="social-logo" src="twitter.png" alt="Twitter" title="Twitter"></a></li>
+        </ul>
+    </div>
+
+    <div class="footer-section">
+        <h3>We Accept</h3>
+        <ul class="payment-methods">
+            <li><a href="https://www.visa.com.my/" target="_blank"><img class="payment-logo" src="visa.png" alt="Visa" title="Visa"></a></li>
+            <li><a href="https://www.mastercard.com.my/en-my.html" target="_blank"><img class="payment-logo" src="mastercard.png" alt="Mastercard" title="Mastercard"></a></li>
+            <li><a href="https://www.paypal.com/my/home" target="_blank"><img class="payment-logo" src="paypal.png" alt="PayPal" title="PayPal"></a></li>
+            <li><a href="https://www.grab.com/my/pay/" target="_blank"><img class="payment-logo" src="grab.png" alt="GrabPay" title="GrabPay"></a></li>
+        </ul>
+    </div>
+</footer>
+
+<script src="home.js"></script>
+
+</body>
+</html>
+
+

@@ -86,6 +86,7 @@ hr {
 .logo-container-n {
     flex: 1;
     text-align: center;
+    align-self: center;
 }
 
 .logo-container-n img {
@@ -197,6 +198,7 @@ hr {
     top: 0;
     display: flex;
     width: 100vw;
+    z-index: 1;
 }
 
 
@@ -272,6 +274,10 @@ hr {
     height: 100%;
     object-fit: contain;
     border-radius: 2.5rem;
+}
+
+.promotions-img:hover {
+    opacity: 0.5;
 }
 
 /* Login */
@@ -369,4 +375,55 @@ hr {
 
 .social-media li {
     margin-right: 10px;
+}
+
+/*Customer review*/
+.review-container {
+    max-width: 800px;
+    margin: 5rem auto;
+    padding: 20px;
+    background-color: black;
+    border-radius: 8px;
+}
+
+.profile-picture {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 30px;
+    text-align: center;
+}
+
+.star-rating {
+    color: yellow;
+    font-size: 20px;
+}
+
+.review {
+    border-bottom: 1px solid black;
+    padding: 15px 0;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.review-date {
+    color: grey;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.cart, .cart img{
+    height: 100%;
+}
+
+/*About us*/
+
+.about-container {
+    margin: 2rem;
+    margin-top: 12vh;
+    text-align: justify;
+}
+.about-container p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
