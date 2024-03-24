@@ -330,11 +330,11 @@ hr {
 
 .fade {
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 2.5s;
 }
 
 @keyframes fade {
-    from {opacity: .4}
+    from {opacity: 0.5}
     to {opacity: 1}
 }
 
@@ -486,7 +486,148 @@ hr {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.itempg-img {
+/* item page */
+
+.slide-effect {
+    color: black;
+    width:50vw;
+    height: 70vh;
+    transition: transform 0.5s; /* Transition for smooth animation */
+    border-radius: 40px;
+    background-color:#F7F7F7;
+    border-radius:20px;
+    display: inline-block;
+    padding:3rem 20px;
+    margin: 2rem;
+  }
+
+.itempg-container{
+    margin-top: 12vh;
+    display:flex;
+    align-items:center;
+    width:100%;
+    height:100%;
+}
+
+.itempg-container img {
+    border-radius: 20px;
+    margin-left: 2rem;
     width: 35vw;
     height: 80vh;
 }
+
+.itempg-main-description{
+    display:flex;
+    border:1px;
+  }
+
+.description-left{
+    display:flex;
+    border:1px;
+    padding:0rem 3rem 1rem 0rem;
+}
+  
+.description-center{
+    display: flex;
+    flex-direction: column;
+    border:none;
+    padding-left:5rem;  
+}
+.button-container{
+    display:flex;
+    align-items: center;
+  }
+  
+  .button{
+    border:5px;
+    border-color:black;
+    padding:16px 50px;
+    text-align:center;
+    display: inline-block;
+    font-size: 25px;
+    transition-duration:0.5s ;
+    cursor:pointer;
+    background-color: #F6C90E;
+    color: black;
+    border-radius: 100px;
+    margin-left: 55px;
+  }
+  
+  .button:hover{
+    background-color:black;
+    color: white;
+  }
+  
+  .button1{
+    background-color:beige;
+    border:none;
+    width: 50px;
+    height:50px;
+    padding:auto;
+    text-align:center;
+    display: inline-block;
+    font-size: 25px;
+    transition-duration:0.5s ;
+    cursor:pointer;
+    background-color:#F6C90E;
+    color: black;
+    border-radius: 50%;
+  }
+  
+  .button1:hover{
+    background-color:black;
+    color: white;
+  }
+  
+  .container{
+    display:flex;
+    align-items:center;
+    width:100%;
+    height:100%;
+  }
+  
+  /*Modal Background-*/
+  .modal{
+      display:none;
+      position:fixed;
+      z-index: 1;
+      padding-top: 100px;
+      left:0;
+      top:0;
+      width:100%;
+      height:100%;
+      overflow:auto;
+      background-color: black;
+  }
+  
+  /*image in modal*/
+  .modal-content{
+      margin:auto;
+      display:block;
+      width:50%;
+      height:90%;
+      max-width: 700px;
+      border-radius:20px;
+  }
+  
+  /*caption of modal image*/
+  #caption{
+      margin:auto;
+      display:block;
+      width:80%;
+      max-width:700px;
+      text-align:center;
+      color: white;
+      padding:10px 0;
+      height:150px;
+  }
+  
+  /*Animation*/
+  .modal-content,caption{
+      animation-name:zoom;
+      animation-duration:0.6s ;
+  }
+  @keyframes zoom {
+    from {transform: scale(0.1)} 
+    to {transform: scale(1)}
+  }

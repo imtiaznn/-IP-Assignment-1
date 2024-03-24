@@ -4,10 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>OSLUX | OSLUX Pendant Luna</title>
+    <title>OSLUX | OSLUX Pendant Dodgen</title>
+    <script>
+      // Get the modal
+      var modal = document.getElementById('myModal');
+      
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById('myImg');
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+      
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+      
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() { 
+        modal.style.display = "none";
+      }    
+    </script>
 </head>
 <body>
-    <nav class="navbar" >
+  <nav class="navbar" >
         <input type="checkbox" id="menu-toggle" class="menu-toggle">
         <header class="header">
           <div class="menu-container">
@@ -32,6 +54,86 @@
             <a href="" class="contact-btn">Contact Us</a>
           </div>
         </header>
-      </nav>
+  </nav>
+  <main>
+      <div class="itempg-container">
+        <img id="myImg" src="Promotions/Upcoming.jpg" alt="Yinyang necklace" width="400" height="500">
+        
+        <div class="slide-effect">
+          
+          <h2 class="title" style="font-size: 35px;">OSLUX Pendant Dodgen</h2><br/>
+          <p class="price" style="font-size:21px;">RM1,668.00 &nbsp;<sub style="font-size: 14px;">incl. VAT</sub></p>
+          <br/>
+          
+          <b style="font-size: 30px;">Description</b><br/>
+          <div class="itempg-main-description">
+              <div class="description-left">
+                <p><b style="font-size:20px;">General<br/></b>
+                  Product No: Dodgen<br/>
+                  Gender: Women<br/>
+                  Solid: Yes<br/>
+                  Colour/Metal: 12k White Gold<br/>
+                  Average weight≈ 7.62 Grams<br/>
+                </p>
+              </div>
+          
+              <div class="description-center">
+                <p><b style="font-size:20px;">Centre Stone<br/></b>
+                  Stone: Ruby<br/>
+                  Certification: GL Certified<br/>
+                  Color: Red<br/>
+                  Center Stone Diameter: 3.0mm<br/>
+                  Chain: Forzentina<br/>
+                  Chain alloy: 14k Gold-585<br/>
+                </p>
+              </div>
+          </div>
+        
+          <p style="color: slategrey;">⛟ Estimated delivery time:20/3/2024-21/3/2024</p>
+          <div class="button-container">
+          <button class="button1" style="margin-left:80px">&#128279;</button>
+          <button class="button1" >&#10084;</button>
+          <a href="payment.html" style="text-decoration: none;" target="_blank" class="button">Purchase 🛒</a>
+        
+        </div>
+          
+        </div>
+      </div>
+
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+      </div>
+  </main>
+  <footer class="footer-container">     
+		<div class="footer-section">
+			<h3>Contact Details</h3>
+			<p>123, Jalan Damansara</p>
+			<p>Kuala Lumpur, 50480 Malaysia</p>
+			<p>Phone: 012-345-6789</p>
+			<p>Email: oslux@jewelrystore.com</p>
+		</div>
+	
+		<div class="footer-section">
+			<h3>Follow Us</h3>
+			<ul class="social-media">
+				<li><a href="https://www.youtube.com" target="_blank"><img class="social-logo" src="Images/youtube.png" alt="YouTube" title="YouTube"></a></li>
+				<li><a href="https://www.instagram.com" target="_blank"><img class="social-logo" src="Images/instagram.png" alt="Instagram" title="Instagram"></a></li>
+				<li><a href="https://twitter.com" target="_blank"><img class="social-logo" src="Images/twitter.png" alt="Twitter" title="Twitter"></a></li>
+			</ul>
+		</div>
+	
+		<div class="footer-section">
+			<h3>We Accept</h3>
+			<ul class="payment-methods">
+				<li><a href="https://www.visa.com.my/" target="_blank"><img class="payment-logo" src="Images/visa.png" alt="Visa" title="Visa"></a></li>
+				<li><a href="https://www.mastercard.com.my/en-my.html" target="_blank"><img class="payment-logo" src="Images/mastercard.png" alt="Mastercard" title="Mastercard"></a></li>
+				<li><a href="https://www.paypal.com/my/home" target="_blank"><img class="payment-logo" src="Images/paypal.png" alt="PayPal" title="PayPal"></a></li>
+				<li><a href="https://www.grab.com/my/pay/" target="_blank"><img class="payment-logo" src="Images/grab.png" alt="GrabPay" title="GrabPay"></a></li>
+			</ul>
+		</div>
+	
+	</footer>
 </body>
 </html>
