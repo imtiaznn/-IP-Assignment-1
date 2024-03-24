@@ -485,3 +485,8 @@ hr {
 .about-container p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+.itempg-img {
+    width: 35vw;
+    height: 80vh;
+}
