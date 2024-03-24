@@ -627,7 +627,8 @@ hr {
       animation-name:zoom;
       animation-duration:0.6s ;
   }
+
   @keyframes zoom {
-    from {transform: scale(0.1)} 
+    from {transform: scale(0.9)} 
     to {transform: scale(1)}
   }

@@ -1,0 +1,244 @@
+:root {
+  font-size: 18px;
+  font-family: "Libre Baskerville" , "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+  --p1: #303841;
+  --p2: black;
+  --p3: #B9B4C7;
+  --p4: #e4e4e4;
+}
+
+body {
+  color: #ffffff;
+  background-color: var(--p1);
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: black;
+  color: white;
+  height: 8vh;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+}
+
+.navbar {
+  height: 8vh;
+  background-color: var(--p2);
+  position: fixed;
+  top: 0;
+  display: flex;
+  width: 100vw;
+  z-index: 1;
+}
+
+.menu-container {
+  display: flex;
+  align-items: center;
+}
+
+.menu-toggle {
+  height: 1rem;
+  display: none;
+}
+
+.menu-btn {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu-btn:hover{
+color:#6c6f6d;
+}
+
+.sidenav {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: -175px; 
+  width: 175px;
+  height: 100vh;
+  background-color: var(--p2);
+  padding-top: 2.5rem;
+transition: left 0.5s ease-in-out;
+}
+
+.sidenav a:last-child {
+  margin-top: auto;
+  padding-bottom: 3rem;
+}
+
+.sidenav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.sidenav a:hover{
+  color: #B9B4C7;
+}
+
+.logo-container-n {
+  flex: 1;
+  text-align: center;
+  align-self: center;
+}
+
+.logo-container-n img {
+  width: 5rem;
+}
+
+.contact-container {
+  margin-left: auto;
+}
+
+.contact-btn {
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+
+.menu-toggle:checked + .header .sidenav {
+  left: 0;
+}
+
+.main-content {
+display: flex;
+  /* height: 200vh; */
+}
+
+.close-btn {
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+}
+
+.close-btn:hover {
+  color: #ccc;
+}
+
+.cart, .cart img{
+  height: 90%;
+}
+  
+  .cart:hover{
+    background-color: #303841;
+  }
+
+.big_container{
+    display:flex;
+}
+
+.text{
+    font-size:20px;
+    padding-bottom:1.5rem;
+    color:#B9B4C7
+}
+.container {
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+    max-width: 600px;
+    width: 100%;
+    text-align: left;
+    font-size:20px;
+    margin-top:100px;
+    margin-bottom:3rem;
+    margin-left: 3rem;
+    height:700px;
+    background-color: #f7f7f7;
+}
+
+a{
+  color:#F6C90E;
+}
+.image{
+    margin:5rem;
+}
+
+input[type="text"],
+input[type="email"]{
+    padding:10px;
+    border-radius:20px;
+    width:100%;   
+}
+
+input[type="submit"] {
+    font-family:Libre Baskerville;
+    background-color: #F6C90E; 
+    color: black;
+    padding:15px;
+    border:none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: 0.4s;
+  }
+
+input[type="submit"]:hover {
+    background-color: #2E4750;   
+    color:white;
+  }
+
+textarea{
+    width:100%;
+    height:200px;
+}
+
+.label{
+    padding-top:10px;
+    padding-bottom:3px;
+}
+
+.social-logo, .payment-logo {
+    width: 40px; 
+    height: auto; 
+  }
+  
+.footer-container {
+    background-color: black; 
+    color: white;
+    display: flex; /* Set to flex to adjust layout */
+    justify-content: space-around; /* Evenly distribute space */
+    align-items: center; /* Center items vertically */
+    padding: 20px; /* Added padding for spacing */
+}
+  
+.footer-section ul li a {
+    color: white; 
+    text-decoration: none; 
+}
+  
+.footer-section ul {
+    list-style: none; 
+    padding: 0; 
+    display:flex;
+}
+  
+.payment-methods {
+    list-style: none; 
+    padding: 0; 
+}
+  
+.footer-section ul li {
+    margin-bottom: 10px; 
+    border:none;
+}
+  
+.footer-section_2 ul{
+    list-style: none; 
+    padding: 0; 
+}
+
+
+
