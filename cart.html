@@ -1,43 +1,62 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head lang="en">
+    <title>OSLUX | Cart</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-
     <nav class="navbar" >
         <input type="checkbox" id="menu-toggle" class="menu-toggle">
-		<header class="header">
-			<div class="menu-container">
-				<label for="menu-toggle" class="menu-btn">&#9776;</label>
-				<nav class="sidenav">
-					<label for="menu-toggle" class="close-btn">&#10005;</label>
-					<a href="">Home</a>
-					<a href="">About</a>
-					<a href="">Services</a>
-					<a href="">Reviews</a>
-                    <a href="">Log in</a>
-				</nav>
-			</div>
-			<div class="logo-container">
-				<a href="">
-					<img src="oslux.png" alt="Logo">
-				</a>
-			</div>
-			<div class="contact-container">
-				<a href="" class="contact-btn">Contact Us</a>
-			</div>
-		</header>
-    </nav>
+        <header class="header">
+          <div class="menu-container">
+            <label for="menu-toggle" class="menu-btn">&#9776;</label>
+            <nav class="sidenav">
+              <label for="menu-toggle" class="close-btn">&#10005;</label>
+              <a href="home.html">Home</a>
+              <a href="aboutus.html">About</a>
+              <a href="review.html">Reviews</a>
+              <a href="login.html">Log in</a>
+            </nav>
+          </div>
+          <div class="logo-container-n">
+            <a href="home.html">
+              <img src="Images/oslux.png" alt="Logo">
+            </a>
+          </div>
+          <div class="cart">
+            <a href =""><img src="Images/Cart.png"></a>
+          </div>
+          <div class="contact-container">
+            <a href="" class="contact-btn">Contact Us</a>
+          </div>
+        </header>
+      </nav>
 
     <main class="main">
         <div class="item-container">
             <p>Shopping cart</p>
             <ul class="item-list">
-                <li class="item"></li>
-                <li class="item"></li>
-                <li class="item"></li>
+                <li class="item">
+                    <img src="Promotions/Best Seller.jpg" alt="OSLUX Pendant Lena">
+                    <p>
+                        <b>OSLUX Pendant Lena</b>
+                        <br/>
+                        $19.99
+                    </p>
+                    <h3>X</h3>
+                </li>
+                <li class="item">
+                    <img src="Promotions/Special Offers.jpg" alt="OSLUX Pendant Kanasia">
+                    <p>
+                        <b>OSLUX Pendant Kanasia</b>
+                        <br/>
+                        $19.99
+                    </p>
+                    <h3>X</h3>
+                </li>
             </ul>
         </div>
         <aside class="summary-container">

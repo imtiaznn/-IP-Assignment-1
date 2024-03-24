@@ -2,9 +2,9 @@
     font-size: 18px;
     font-family: "Libre Baskerville" , "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
     --p1: #303841;
-    --p2: #423c52;
+    --p2: black;
     --p3: #B9B4C7;
-    --p4: white;
+    --p4: #ffffff;
 }
 
 body {
@@ -80,7 +80,7 @@ hr {
 }
 
 .sidenav a:hover{
-	background-color:#000000
+    color: #B9B4C7;
 }
 
 .logo-container-n {
@@ -187,7 +187,7 @@ hr {
 
 /*Shopping Cart*/
 .main {
-    margin-top: 8vh;
+    margin-top: 12vh;
     display: flex;
 }
 
@@ -215,7 +215,8 @@ hr {
 }
 
 .item {
-    height: 3rem;
+    display: flex;
+    height: 10rem;
     width: 60vw;
     background-color: var(--p4);
     list-style: none;
@@ -223,8 +224,28 @@ hr {
     border-radius: 25px;
 }
 
+.item img {
+    width: 20%;
+    height: 100%;
+    border-radius: 1.25rem;
+    margin-right: 1rem;
+}
+
+.item p {
+    color: black;
+}
+
+.item h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
 /*summary lists*/
 .summary-container {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 20rem;
     width: 25rem;
     display: flex;
     flex-direction: column;
@@ -245,7 +266,7 @@ hr {
 .promotions-container {
     display: flex;
     flex-direction: column;
-    margin-top: 100vh;
+    margin-top: 97.5vh;
     margin-right: auto;
     margin-left: auto;
 }
@@ -253,11 +274,9 @@ hr {
 .promotions ,.promotions-a {
     display: flex;
     color: black;
-    width: 80vw;
-    height: 60vh;
+    width: 100vw;
+    height: 80vh;
     background-color: var(--p4);
-    margin-top: 3rem;
-    border-radius: 2.5rem;
 }
 
 .promotions-a img {
@@ -273,7 +292,6 @@ hr {
 .promotions img, .promotions-a img {
     height: 100%;
     object-fit: contain;
-    border-radius: 2.5rem;
 }
 
 .promotions-img:hover {
@@ -414,14 +432,14 @@ hr {
 }
 
 .cart, .cart img{
-    height: 100%;
+    height: 90%;
 }
 
 /*About us*/
 
 .about-container {
     margin: 2rem;
-    margin-top: 12vh;
+    margin-top: 14vh;
     text-align: justify;
 }
 .about-container p {
